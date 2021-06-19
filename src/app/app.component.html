@@ -8,7 +8,7 @@
         <button class="btn btn-outline-success" (click)=search()>Buscar</button>
       </div>
       <div style="padding-left: 20px">
-        <button style="padding-left: 4px; padding-right: 4px" class="btn btn-outline-primary" (click)=reload()>Recargar</button>
+        <button style="padding-left: 4px; padding-right: 4px" class="btn btn-outline-primary" (click)=reload()><fa-icon style="padding: 10px" [icon]="faSpinner"></fa-icon></button>
       </div>
     </form>
   </div>
@@ -20,6 +20,28 @@
         <div class="col">
           <div class="card-body">
             <h5 class="card-title">{{ hotel.name }}</h5>
+            <div *ngIf="hotel.stars === 2">
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+            </div>
+            <div *ngIf="hotel.stars === 3">
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+            </div>
+            <div *ngIf="hotel.stars === 4">
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+            </div>
+            <div *ngIf="hotel.stars === 5">
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+              <fa-icon style="padding: 10px; color:#f3ca4c" [icon]="faStar"></fa-icon>
+            </div>
             <hr>
             <p class="card-text">{{ hotel.description }}</p>
           </div>
@@ -27,7 +49,6 @@
       </div>
     </div>
 </div>
-
 
 <div *ngIf="flag!">
   <h1>{{ message }}</h1>

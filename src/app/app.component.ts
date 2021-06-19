@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {HotelsService} from './services/hotels.service';
-
+import { faSpinner , faStar} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,6 +14,8 @@ export class AppComponent {
   message: string;
   finded: string;
   result: any[];
+  faSpinner = faSpinner;
+  faStar = faStar;
   constructor( private service: HotelsService) {
     this.flag = false;
     this.service.getHotels()
@@ -50,5 +52,6 @@ export class AppComponent {
   // tslint:disable-next-line:typedef
    reload(){
     this.hotelscopy = this.hotels;
+    alert('Ya está actualizado');
    }
 }

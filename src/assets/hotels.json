@@ -3,72 +3,84 @@
     "id": 1,
     "name": "Hotel bh Bicentenario",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/79698295.webp?k=ff07dde1f0d792c9b2a3234f90e285e63d919bdbfd8d42a75aee67396668e4d6&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/79698295.webp?k=ff07dde1f0d792c9b2a3234f90e285e63d919bdbfd8d42a75aee67396668e4d6&o=",
+    "stars": 2
   },
   {
     "id": 2,
     "name": "Lancaster House",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/250369903.webp?k=ced4c1571f2a5d4523f43f4c3dc57580c057003b80bc3ac2a6701b59366282b1&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/250369903.webp?k=ced4c1571f2a5d4523f43f4c3dc57580c057003b80bc3ac2a6701b59366282b1&o=",
+    "stars": 3
   },
   {
     "id": 3,
-    "name": "Hotel Platinum SuiteSe",
+    "name": "Hotel Platinum Suite",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/110528700.webp?k=0d83665e48c2fc5be25680e4c61c1020b085dd8739ebe2ddc02c4f8e7418029f&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/110528700.webp?k=0d83665e48c2fc5be25680e4c61c1020b085dd8739ebe2ddc02c4f8e7418029f&o=",
+    "stars": 5
   },
   {
     "id": 4,
     "name": "Lloyds Apartasuites Parque 93",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/46098855.webp?k=c9843b866656144ac8d019772c23f5902d98eeb15bee3ed7f567af0cf70374b7&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/46098855.webp?k=c9843b866656144ac8d019772c23f5902d98eeb15bee3ed7f567af0cf70374b7&o=",
+    "stars": 3
   },
   {
     "id": 5,
     "name": "Hotel Embajada Real",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/253800183.webp?k=8071ef35f84f39ee888a61e52a1bc32f2ecfbe6a6a5b8bea225a24570dbcf0ed&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/253800183.webp?k=8071ef35f84f39ee888a61e52a1bc32f2ecfbe6a6a5b8bea225a24570dbcf0ed&o=",
+    "stars": 2
   },
   {
     "id": 6,
     "name": "NH Bogota Pavillon Royal",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/264167214.jpg?k=ca052712e7eccdf5fd1a8022cde40fc54495c451309ca9e228fedd77654ba04c&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/264167214.jpg?k=ca052712e7eccdf5fd1a8022cde40fc54495c451309ca9e228fedd77654ba04c&o=",
+    "stars": 3
   },
   {
     "id": 7,
     "name": "Selina Parque 93 Bogota",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/180624183.jpg?k=7cc71c0c730ef32c20629df7dc440c613eb31cb126babe62fbc4a99017fe7269&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/180624183.jpg?k=7cc71c0c730ef32c20629df7dc440c613eb31cb126babe62fbc4a99017fe7269&o=",
+    "stars": 2
   },
   {
     "id": 8,
     "name": "GHL Collection 93",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/252391581.jpg?k=a64b2ebda3724b571d119cf37ec817e8cd368d7fc892475c5f041d32a6213304&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/252391581.jpg?k=a64b2ebda3724b571d119cf37ec817e8cd368d7fc892475c5f041d32a6213304&o=",
+    "stars": 5
   },
   {
     "id": 9,
     "name": "GHL Hotel Bioxury",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/99306341.jpg?k=aef85121e3ce055e2fe61a80caca581a62d169925c678e2764a190b560f27142&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/99306341.jpg?k=aef85121e3ce055e2fe61a80caca581a62d169925c678e2764a190b560f27142&o=",
+    "stars": 5
   },
   {
     "id": 10,
     "name": "Best Western Plus 93 Park",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/114693795.jpg?k=bc60c3d0055de9fbbe3afe3ac2d52a5f28a0e5d4493209eabb9a79f4449ebe47&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/114693795.jpg?k=bc60c3d0055de9fbbe3afe3ac2d52a5f28a0e5d4493209eabb9a79f4449ebe47&o=",
+    "stars": 2
   },
   {
     "id": 11,
     "name": "Fantastic 1BR LUXURY ",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/276255779.jpg?k=d74e31c5bbce7c6e300b7de37b2c6a4aff404d0e6f67aa9290e2bb636969b673&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/276255779.jpg?k=d74e31c5bbce7c6e300b7de37b2c6a4aff404d0e6f67aa9290e2bb636969b673&o=",
+    "stars": 3
   },
   {
     "id": 12,
     "name": "Jungle Cove Loft Virrey",
     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/299248767.jpg?k=9744b8cd040c865ce18c6aed12a2f5644f1b26443eb499761b6b296320430a1a&o="
+    "img": "https://cf.bstatic.com/xdata/images/hotel/square200/299248767.jpg?k=9744b8cd040c865ce18c6aed12a2f5644f1b26443eb499761b6b296320430a1a&o=",
+    "stars": 4
   }
 ]
