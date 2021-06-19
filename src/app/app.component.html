@@ -1,23 +1,27 @@
 
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand">Cheil</a>
-    <form class="d-flex" style="padding: 5px" >
-      <input style="padding-left: 6px" [(ngModel)]="finded" name="finded" type="search" placeholder="Buscar Hotel" aria-label="Search">
-      <div style="padding-left: 20px">
-        <button class="btn btn-outline-success" (click)=search()>Buscar</button>
-      </div>
-      <div style="padding-left: 20px">
-        <button style="padding-left: 4px; padding-right: 4px" class="btn btn-outline-primary" (click)=reload()><fa-icon style="padding: 10px" [icon]="faSpinner"></fa-icon></button>
-      </div>
-    </form>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <span class="navbar-toggler-icon"></span>
+  </button> <a class="navbar-brand">Cheil <fa-icon style="padding: 10px" [icon]="faHotel"></fa-icon></a>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="navbar-nav ml-md-auto">
+      <li class="nav-item">
+        <form class="form-inline">
+          <input [(ngModel)]="finded" name="finded" class="form-control mr-sm-2" type="text" />
+          <button class="btn btn-outline-success my-2 my-sm-0 mr-4" (click)=search()>Buscar</button>
+          <button style="padding-left: 4px; padding-right: 4px" class="btn btn-outline-primary" (click)=reload()><fa-icon style="padding: 10px" [icon]="faSpinner"></fa-icon></button>
+        </form>
+      </li>
+    </ul>
   </div>
 </nav>
-<div class="container-fluid" style="padding-top: 20px">
-    <div class="row row-cols-6 gy-5 gx-2" style="justify-content: center">
-      <div *ngFor="let hotel of hotelscopy"  class="card" style="width: 24rem; padding: 33px;">
-        <img [src]="hotel.img" class="card-img-top" alt="...">
-        <div class="col">
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let hotel of hotelscopy" class="col-xs-12 col-md-6 col-lg-4 bottom-space">
+      <div class="card">
+        <div class="card-body">
+          <img [src]="hotel.img" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{ hotel.name }}</h5>
             <div *ngIf="hotel.stars === 2">
@@ -54,10 +58,13 @@
         </div>
       </div>
     </div>
+  </div>
 </div>
 
-<div *ngIf="flag!">
-  <h1>{{ message }}</h1>
+<div class="alert-target" *ngIf="flag!">
+  <div class="alert alert-warning" role="alert">
+    <h1>{{ message }}</h1>
+  </div>
 </div>
-
 <router-outlet></router-outlet>
+

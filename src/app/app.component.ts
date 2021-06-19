@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {HotelsService} from './services/hotels.service';
-import { faSpinner , faStar} from '@fortawesome/free-solid-svg-icons';
+import { faSpinner , faStar , faHotel} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,6 +16,7 @@ export class AppComponent {
   result: any[];
   faSpinner = faSpinner;
   faStar = faStar;
+  faHotel = faHotel;
   constructor( private service: HotelsService) {
     this.flag = false;
     this.service.getHotels()
