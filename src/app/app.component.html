@@ -8,8 +8,8 @@
     <ul class="navbar-nav ml-md-auto">
       <li class="nav-item">
         <form class="form-inline">
-          <input [(ngModel)]="finded" name="finded" class="form-control mr-sm-2" type="text" />
-          <button class="btn btn-outline-success my-2 my-sm-0 mr-4" (click)=search()>Buscar</button>
+          <input [(ngModel)]="finded" name="finded" class="form-control mr-sm-2" type="text">
+          <button class="btn btn-outline-success my-2 my-sm-0 mr-4" (keypress)="search()" (click)=search()>Buscar</button>
           <button style="padding-left: 4px; padding-right: 4px" class="btn btn-outline-primary" (click)=reload()><fa-icon style="padding: 10px" [icon]="faSpinner"></fa-icon></button>
         </form>
       </li>
@@ -61,10 +61,5 @@
   </div>
 </div>
 
-<div class="alert-target" *ngIf="flag!">
-  <div class="alert alert-warning" role="alert">
-    <h1>{{ message }}</h1>
-  </div>
-</div>
 <router-outlet></router-outlet>
 

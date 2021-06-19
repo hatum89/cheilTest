@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {HotelsService} from './services/hotels.service';
 import { faSpinner , faStar , faHotel} from '@fortawesome/free-solid-svg-icons';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -18,7 +19,6 @@ export class AppComponent {
   faStar = faStar;
   faHotel = faHotel;
   constructor( private service: HotelsService) {
-    this.flag = false;
     this.service.getHotels()
       .subscribe((hotels: any) => {
         console.log(hotels);
@@ -29,9 +29,13 @@ export class AppComponent {
 
   // tslint:disable-next-line:typedef
   search() {
-    if (this.finded === undefined) {
-      this.flag = true;
-      alert('esta vacia la barra de busqueda');
+       this.finded.toString();
+       if (this.finded === undefined) {
+      Swal.fire({
+        text: 'La barra de búsqueda se encuentra vacía',
+        confirmButtonText: 'Aceptar',
+        confirmButtonColor: '#3085d6',
+      });
     } else {
       this.hotelscopy = this.hotels;
       this.searchPerformed = [];
@@ -40,11 +44,13 @@ export class AppComponent {
         if ( hotel.search((this.finded.trim()).toLowerCase()) >= 0) {
           this.searchPerformed.push(data);
         }
-        if (this.searchPerformed.length > 0) {
-          this.flag = false;
+        if (this.searchPerformed.length >= 0) {
         } else {
-          this.flag = true;
-          this.message = 'No hay información referente a ese nombre de Hotel';
+          this.message = Swal.fire({
+            text: 'No existe un hotel con ese nombre',
+            confirmButtonText: 'Aceptar',
+            confirmButtonColor: '#3085d6',
+          });
         }
       });
       this.hotelscopy = this.searchPerformed;
@@ -52,7 +58,15 @@ export class AppComponent {
   }
   // tslint:disable-next-line:typedef
    reload(){
+    this.finded = '';
     this.hotelscopy = this.hotels;
-    alert('Ya está actualizado');
+    // alert('Ya está actualizado');
+    Swal.fire({
+       title: 'Cheil Hotel',
+       text: 'Actualizado',
+       icon: 'success',
+       confirmButtonText: 'Aceptar',
+       confirmButtonColor: '#3085d6',
+     });
    }
 }

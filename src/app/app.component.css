@@ -5,3 +5,9 @@
 .alert-target {
   padding: 20px;
 }
+.card-title {
+  margin-bottom: 1.75rem !important;
+}
+.card-body {
+  padding: 10px !important;
+}
