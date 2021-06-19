@@ -27,15 +27,14 @@ export class AppComponent {
   // tslint:disable-next-line:typedef
   search() {
     if (this.finded === undefined) {
-      this.hotelscopy = [];
       this.flag = true;
-      this.message = 'esta vacia la barra de busqueda';
+      alert('esta vacia la barra de busqueda');
     } else {
       this.hotelscopy = this.hotels;
       this.searchPerformed = [];
       this.hotelscopy.forEach( data => {
         const hotel: string = data.name.toLowerCase();
-        if ( hotel.search(this.finded.toLowerCase()) >= 0) {
+        if ( hotel.search((this.finded.trim()).toLowerCase()) >= 0) {
           this.searchPerformed.push(data);
         }
         if (this.searchPerformed.length > 0) {
@@ -48,5 +47,8 @@ export class AppComponent {
       this.hotelscopy = this.searchPerformed;
     }
   }
-
+  // tslint:disable-next-line:typedef
+   reload(){
+    this.hotelscopy = this.hotels;
+   }
 }

@@ -3,9 +3,12 @@
   <div class="container-fluid">
     <a class="navbar-brand">Cheil</a>
     <form class="d-flex" style="padding: 5px" >
-      <input [(ngModel)]="finded" name="finded" type="search" placeholder="Buscar Hotel" aria-label="Search">
+      <input style="padding-left: 6px" [(ngModel)]="finded" name="finded" type="search" placeholder="Buscar Hotel" aria-label="Search">
       <div style="padding-left: 20px">
         <button class="btn btn-outline-success" (click)=search()>Buscar</button>
+      </div>
+      <div style="padding-left: 20px">
+        <button style="padding-left: 4px; padding-right: 4px" class="btn btn-outline-primary" (click)=reload()>Recargar</button>
       </div>
     </form>
   </div>
