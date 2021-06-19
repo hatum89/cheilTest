@@ -29,7 +29,7 @@ export class AppComponent {
 
   // tslint:disable-next-line:typedef
   search() {
-       if (this.finded === undefined) {
+       if (this.finded === undefined || this.finded === '') {
       Swal.fire({
         text: 'La barra de búsqueda se encuentra vacía',
         confirmButtonText: 'Aceptar',
