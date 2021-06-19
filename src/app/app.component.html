@@ -1,3 +1,23 @@
 
+<a class="navbar-brand">Cheil</a>
+<input [(ngModel)]="finded" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)=search()>Buscar</button>
 
+<section class="home">
+  <div *ngFor="let hotel of hotelscopy">
+    <div class="in-flex">
+      {{ hotel.name }}
+      <hr>
+    </div>
+    <br>
+    <div class="in-flex">
+      <img [src]="hotel.img" alt="">
+    </div>
+  </div>
+</section>
+
+
+<div *ngIf="flag!">
+  <h1>{{ message }}</h1>
+</div>
 <router-outlet></router-outlet>
