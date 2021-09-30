@@ -12,7 +12,6 @@ export class AppComponent {
   hotelscopy: any[] = [];
   searchPerformed: any[];
   flag: boolean;
-  message: string;
   finded: string;
   result: any[];
   faSpinner = faSpinner;
@@ -20,9 +19,9 @@ export class AppComponent {
   faHotel = faHotel;
   constructor( private service: HotelsService) {
     this.service.getHotels()
-      .subscribe((hotels: any) => {
-        console.log(hotels);
-        this.hotels = hotels;
+      .subscribe((datahotels: any) => {
+        console.log(datahotels);
+        this.hotels = datahotels.hotels;
         this.hotelscopy = this.hotels;
       });
   }
@@ -43,23 +42,28 @@ export class AppComponent {
         if ( hotel.search((this.finded.trim()).toLowerCase()) >= 0) {
           this.searchPerformed.push(data);
         }
-        if (this.searchPerformed.length >= 0) {
-        } else {
-          this.message = Swal.fire({
-            text: 'No existe un hotel con ese nombre',
-            confirmButtonText: 'Aceptar',
-            confirmButtonColor: '#3085d6',
-          });
-        }
       });
+      if (this.searchPerformed.length > 0) {
+           console.log('encontro algo', this.searchPerformed.length);
+         } else if (this.searchPerformed.length === 0){
+            Swal.fire({
+             text: 'No existe un hotel con ese nombre',
+             confirmButtonText: 'Aceptar',
+             confirmButtonColor: '#3085d6',
+           }).then((result) => {
+             if (result.isConfirmed){
+               this.reload();
+             }
+            });
+         }
       this.hotelscopy = this.searchPerformed;
     }
+       this.finded = '';
   }
   // tslint:disable-next-line:typedef
    reload(){
     this.finded = '';
     this.hotelscopy = this.hotels;
-    // alert('Ya está actualizado');
     Swal.fire({
        title: 'Cheil Hotel',
        text: 'Actualizado',
